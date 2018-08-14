@@ -1,0 +1,53 @@
+{% load staticfiles %}
+<link rel = "stylesheet" type="text/css" href="{% static 'SOM/style.css' %}" />
+<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<body>
+<link rel = "stylesheet" type="text/css" href="{% static 'SOM/style.css' %}" />
+<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form class="md-form">
+    <div class="file-field">
+        <div class="btn btn-primary btn-sm float-left">
+            <span>Choose file</span>
+            <input type="file">
+        </div>
+        <div class="file-path-wrapper">
+           <input class="file-path validate" type="text" placeholder="Upload your file">
+        </div>
+    </div>
+</form>
+
+<div class="container">
+  <h2>VisualNet</h2>
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://i.stack.imgur.com/P55JF.jpg" alt="Los Angeles" style="width:50%, height: 50px;">
+      </div>
+
+      <div class="item">
+        <img src="http://davis.wpi.edu/~matt/courses/soms/weights.jpg" alt="Chicago" style="width:50%, height: 50px;">
+      </div>
+
+      <div class="item">
+        <img src="http://jjguy.com/som/somcolor-after.png" alt="New york" style="width:50%, height: 50px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>

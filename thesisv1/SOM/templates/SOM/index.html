@@ -1,0 +1,24 @@
+{{ file }}
+<h1> Network Visualization Tool</h1>
+<br>
+<hr>
+
+
+<form class="md-form" action="{% url 'SOM:detail' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="file-field">
+        <div class="btn btn-primary btn-sm float-left">
+            <span>Choose pcap file</span>
+            <input type="file" name = "file_name">
+        </div>
+
+
+
+        <div class="file-path-wrapper">
+           <input class="file-path validate" type="text" placeholder="Upload your file">
+            <button type="submit"  class="btn btn-primary pull-right">Submit</button>
+        </div>
+    </div>
+</form>
+
+
